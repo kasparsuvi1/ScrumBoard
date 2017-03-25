@@ -3,6 +3,7 @@
 class boards extends Controller
 {
 
+
     function index()
     {
         $this->tasks_todo = get_all("SELECT * FROM tasks WHERE Status = 'todo' AND deleted = 0");
